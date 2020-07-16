@@ -1,0 +1,368 @@
+$dark: #2c2325;
+$blue: #0094fe;
+$active: #0096ff;
+$bgcolor: #1d2025;
+$bgcitem: linear-gradient(45deg, #424252, #282535);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Circe";
+}
+h5 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header__inner {
+    padding: 25px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.header-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__btn {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 7px;
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        color: $active;
+    }
+    &__link {
+        margin-right: 12px;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 700;
+        &:hover {
+            color: $active;
+            transition: .1s linear;
+        }
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+    }
+}
+.nav-contacts {
+    margin-left: 17px;
+    &__number {
+        margin-right: 13px;
+        color: #000000;
+        font-size: 17px;
+        font-weight: 800;
+        &:hover {
+            color: $active;
+            transition: .1s linear;
+        }
+        &::before {
+            content: "\f879";
+            padding-right: 5px;
+            font-size: 13px;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            color: $active;
+        }
+    }
+    &__btn {
+        padding: 18px 41px;
+        background-color: #393939;
+        border-radius: 12px;
+        border: none;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 800;
+        text-transform: uppercase;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+
+.section__img {
+    height: 613px;
+    background-color: $bgcolor;
+    background-image: url("../img/bg-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.adv__inner {
+    padding: 62px 0;
+}
+
+.adv__title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.adv-cardbox {
+    padding: 43px 0;
+    &__item {
+        // height: max-content;
+        background: $bgcitem;
+        &-big {
+            height: 306px;
+        }
+    }
+}
+
+.column {
+    height: calc(100%);
+}
+
+.modal {
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    max-height: 780;
+    height: 100%;
+    &-content {
+        position: relative;
+        padding: 47px 160px 80px 160px;
+        margin: 30px auto;
+        text-align: center;
+        background-color: #ffffff;
+        color: #000000;
+        width: 100%;
+        max-width: 781px;
+        .close {
+            position: absolute;
+            top: 22px;
+            right: 22px;
+        }
+        &__title {
+            font-size: 26px;
+            font-weight: 800;
+        }
+        &__text {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &-form {
+        padding: 50px 0 18px 0;
+        margin: 0 auto;
+        input {
+            display: block;
+            padding: 18px;
+            margin-bottom: 20px;
+            width: 225px;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        button {
+            display: block;
+            padding: 19px 60px;
+            background-color: #393939;
+            border: none;
+            border-radius: 12px;
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    h5 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
+    .header-nav {
+        margin-right: 50px;
+        &__btn {
+            display: block;
+            &:hover {
+                color: #2c2325;
+                transition: .2s linear;
+            }
+        }
+        &__link {
+            margin-top: 10px;
+           display: none;
+        }
+    }  
+    .nav-contacts {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        
+        &__number {
+            display: none;
+            font-size: 14px;
+        }
+        &__btn {
+            display: none;
+            padding: 15px 30px;
+            font-size: 10px;
+        }
+    }
+
+}
+@media (max-width: 834px) {
+    .section__img {
+        height: 400px;
+    }
+    .adv__title {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }  
+}
+@media (max-width: 768px) {
+    .header__logo {
+        position: absolute;
+        left: 0;
+        top: 25px;
+    
+    }
+    .header-nav {
+        align-items: baseline;
+        margin: 50px auto 0 auto;
+        &__link {
+            margin-bottom: 5px;
+        }
+    }
+    h5 {
+        font-size: 21px;
+    }
+    .adv__title {
+        font-size: 35px;
+    }
+    .adv-cardbox {
+        &__item {
+            min-height: 200px;
+            &-big {
+                height: 250px;
+            }
+        }
+    }
+    
+}
+@media (max-width: 678px) {
+    .adv__title {
+        font-size: 28px;
+    }
+    .adv__inner {
+        padding: 30px 0;
+    }
+    .adv-cardbox {
+        padding: 30px 0;
+    }
+    .modal {
+        &-content {
+            padding: 47px 0 80px 0;
+        }
+    }
+}
+@media (max-width: 478px) {
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__link {
+            margin-top: 0;
+        }
+    }
+      
+    .nav-contacts {
+        margin: 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'Circe';
+    src: url("../fonts/Circe-Bold.eot");
+    src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/Circe-Bold.woff") format('woff2'),
+    url("../fonts/Circe-Bold.woff") format('woff'),
+    url('../fonts/Circe-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url("../fonts/Circe-ExtraBold.eot");
+    src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/Circe-ExtraBold.woff") format('woff2'),
+    url("../fonts/Circe-ExtraBold.woff") format('woff'),
+    url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url("../fonts/Circe-Regular.eot");
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url("../fonts/Circe-Regular.woff") format('woff2'),
+    url("../fonts/Circe-Regular.woff") format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Marbery test</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner"> 
+                    <a class="header__logo" href="#">
+                        <img src="img/logo.png" alt="Лого РемБытМаш Ремонт посудомоечных машин">
+                    </a> 
+                    <!-- /.header__logo -->
+                    <button class="header__nav header-nav__btn">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- /.menu__burger -->
+                   
+                    
+                    <nav class="header__nav header-nav">
+                        <a class="header-nav__link" href="#">Прайс</a> 
+                        <!-- /.header__nav--link -->
+                        <a class="header-nav__link" href="#">О компании</a> 
+                        <!-- /.header__nav--link -->
+                        <a class="header-nav__link" href="#">Отзывы</a> 
+                        <!-- /.header__nav--link -->
+                        <a class="header-nav__link" href="#">Контакты</a> 
+                        <!-- /.header__nav--link -->
+                        <div class="header-nav__contacts nav-contacts">
+                            <a class="nav-contacts__number" href="8 (812) 602-60-00">8 (812) 602-60-00</a> 
+                            <!-- /.header__nav--link -->
+                            <a class="nav-contacts__btn" type="button" href="#">Заказать ремонт</a> 
+                            <!-- /.header__nav--link -->
+                        </div>
+                        <!-- /.header-nav__contacts -->
+                        
+                    </nav>
+                    <!-- /.header__nav -->
+                </div> 
+                <!-- /.header__inner -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <!-- /.header -->
+
+        <section class="section__img">
+
+        </section>
+        <!-- /.section__img -->
+
+        <section class="section__adv">
+            <div class="container">
+                <div class="adv__inner">
+                    <h2 class="adv__title">Почему уже 3356 клиентов выбрали нас?</h2>
+                    <!-- /.adv__title -->
+                    <div class="row adv-cardbox">
+                        <div class="col-xs-12 col-md-6 mb-4">
+                          <div class="card adv-cardbox__item adv-cardbox__item-big">
+                            <div class="card-body text-center mt-md-3">
+                                <h5 class="card-title font-weight-bold text-white mt-lg-5">В 95% случаев нам нужно приехать к Вам всего один раз</h5>
+                                <p class="card-text font-weight-bold text-primary mb-0">Чтобы починить Вашу посудомоечную машину.</p>
+                            </div>
+                          </div>
+                          <!-- /.card -->
+                        </div>
+                        <!-- /.col-6 -->
+                        <div class="col-xs-12 col-md-6 mb-4">
+                          <div class="card adv-cardbox__item adv-cardbox__item-big">
+                            <div class="card-body text-center mt-md-3">
+                                <h5 class="card-title font-weight-bold text-white mt-lg-5">Не оставим за собой грязи!</h5>
+                                <p class="card-text font-weight-bold text-primary">Гарантируем Вам, что мастер оставит после себя помещение в том виде, в котором оно было доего приезда!</p>
+                            </div>
+                          </div>
+                          <!-- /.card -->
+                        </div>
+                        <!-- /.col-6 -->
+                        <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
+                          <div class="card adv-cardbox__item">
+                            <div class="card-body text-center">
+                              <h5 class="card-title font-weight-bold text-white">Сегодня позвонили - сегодня приехали и починили</h5>
+                              <p class="card-text font-weight-bold text-primary">Вы не потеряете свое время, в большинстве случаев.</p>
+                            </div>
+                          </div>
+                          <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
+                          <div class="card adv-cardbox__item">
+                            <div class="card-body text-center">
+                              <h5 class="card-title font-weight-bold text-white">В гарантийном случае при повторной поломке</h5>
+                              <p class="card-text font-weight-bold text-primary">Мастер устранит проблему - бесплатно!</p>
+                            </div>
+                          </div>
+                          <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-xs-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card adv-cardbox__item">
+                              <div class="card-body text-center ">
+                                <h5 class="card-title font-weight-bold text-white">Мы чиним посудомойки любых марок!</h5>
+                                <p class="card-text font-weight-bold text-primary">Aeg, Ardo, Asko, Bosch, Candy, Electrolux и другие.</p>
+                              </div>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.adv__inner -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section__adv -->
+        <div class="modal" id="connection" role="dialog">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <h4 class="modal-content__title">Cвязь с нами</h4>
+            <p class="modal-content__text">Заполните поля ниже и мы перезвоним Вам за 5 минут!</p>
+            <div class="modal-form">
+              <form>
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваш телефон">
+                <button class="callme" type="submit">Перезвоните мне</button>
+              </form>
+            </div>
+            <!-- /.modal-form -->
+            <small>Нажимая кнопку “Перезвоните мне” Вы соглашаетесь на обработку Ваших данных.</small>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="modal" id="calling" role="dialog">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+            <h4 class="modal-content__title">Спасибо</h4>
+            <p class="modal-content__text">Мы перезвоним Вам за 5 минут!</p>
+            <div class="modal-form">
+              <button class="ok-btn" type="submit">Хорошо</button>
+            </div>
+            <!-- /.modal-form -->
+            
+          </div>
+        <!-- /.modal -->
+
+    </div>
+    <!-- /.page -->
+
+
+    <script>
+      $(document).ready(function() {
+        var menuBtn = $('.header-nav__btn');
+        var menu = $('.header-nav__link');
+        var contacts = $('.nav-contacts__btn')
+        var closeBtn = $('.callme');
+        var okBtn = $('.ok-btn');
+
+        menuBtn.on('click', function(event) {
+          event.preventDefault();
+          menu.slideToggle(300);
+          contacts.slideToggle(300);
+        });
+        closeBtn.on('click',function(event) {
+          event.preventDefault();
+            $('#connection').modal('hide');
+            $('#calling').modal('show');
+        });
+        okBtn.on('click',function(event) {
+          event.preventDefault();
+          $('#calling').modal('hide'); 
+        });
+        contacts.on('click',function(event) {
+          event.preventDefault();
+          $('#connection').modal('show');
+        });
+      });
+    </script>
+    <!-- /.menu -->
+</body>
+</html>
